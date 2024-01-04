@@ -1,0 +1,10 @@
+   
+  Installation-web-db : 
+    web-serveur:
+      hosts:
+        web_server1: 192.168.1.101
+        web_server2: 192.168.1.102
+    db-serveur:
+      hosts:
+        db_server1: 192.168.1.201
+        db_server2:  192.168.1.202
