@@ -1,13 +1,16 @@
 ---
 - name: Installation Nginx and MariaDB
   hosts: Installation-web-db
+  become : true
   tasks:
     - name: Install Nginx
       apt:
         name: nginx
         state: present
+      when: "'web-seveur' in group_names"
 
     - name: Install MariaDB
       apt:
         name: mariadb
         state: present
+      when: "db-serveur' in group group_names"
