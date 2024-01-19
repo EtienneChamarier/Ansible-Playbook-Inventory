@@ -13,4 +13,4 @@
       apt:
         name: mariadb
         state: present
-      when: "db-serveur' in group group_names"
+      when: "'db-serveur' in group group_names"
